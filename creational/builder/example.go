@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"time"
 )
 
@@ -15,7 +16,7 @@ func main() {
 
 	msg, err := bldr.Build()
 	if err != nil {
-		_ = fmt.Errorf("error building message: %v", err)
+		log.Fatalf("error building message: %v", err)
 	} else {
 		fmt.Printf("%v", msg)
 	}
