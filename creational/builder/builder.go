@@ -11,7 +11,7 @@ type MessageBuilder struct {
 	CreatedAt time.Time
 }
 
-func newMessageBuilder() *MessageBuilder {
+func NewMessageBuilder() *MessageBuilder {
 	return &MessageBuilder{}
 }
 

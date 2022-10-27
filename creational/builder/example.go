@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	bldr := newMessageBuilder()
+	bldr := NewMessageBuilder()
 
 	bldr.SetBody("hello")
 	bldr.SetTyp(TextMsgType)
